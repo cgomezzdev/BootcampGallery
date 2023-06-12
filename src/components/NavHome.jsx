@@ -12,7 +12,13 @@ function NavHome() {
             <Nav.Link as={Link} to="/" href="#home">Home</Nav.Link>
           </Nav>
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/ex1" href="#ex1">Ex1</Nav.Link>
+            <Nav.Link as={Link} to="/ex1">Ex1</Nav.Link>
+          </Nav>
+          <Nav className="me-auto">
+            <Nav.Link as={Link} to="/ex1">Ex2</Nav.Link>
+          </Nav>
+          <Nav className="me-auto">
+            <Nav.Link as={Link} to="/ex1">Ex3</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
