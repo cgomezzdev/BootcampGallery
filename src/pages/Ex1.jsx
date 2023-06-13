@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import cities from "../assets/files/cities.json";
-import { Table } from "react-bootstrap";
+import { sortAlphabetically } from "../utils/api/functions/sortAlphabetically.js";
+import { Table,Button } from "react-bootstrap";
 
 function Ex1() {
   console.log(cities);
+//   const [cities,setCities] = useState(cities)
 
   const showCites = cities.map((e, i) => (
     <tr key={i}>
@@ -13,6 +15,8 @@ function Ex1() {
       <td>{e.comarca}</td>
     </tr>
   ));
+
+//   showCitesAlphabetic = sortAlphabetically(showCites)
 
   return (
     <div>
@@ -26,6 +30,9 @@ function Ex1() {
         les poblacions de la provincia seleccionada. Afegir una opció "totes"
         que no filtri res, i sigui la opció per defecte
       </p>
+      <div>
+        <Button>Ordena alfabèticament</Button>
+      </div>
       <Table striped bordered hover>
         <thead>
           <tr>
