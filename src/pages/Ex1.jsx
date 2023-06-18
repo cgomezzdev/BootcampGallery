@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import cities from "../assets/files/cities.json";
-import { sortAlphabetically } from "../utils/api/functions/sortAlphabetically.jsx";
-import { Table, Button, Form } from "react-bootstrap";
+import { Table, Button, Form, Col } from "react-bootstrap";
 import "../styles/ex1.css";
 
 function Ex1() {
@@ -53,11 +52,13 @@ function Ex1() {
       <hr />
       <div className="filters">
         <div>
+          <Form.Label>Ordena:</Form.Label>
           <Button variant="light" onClick={handleSortMunicipality}>
-            Ordena alfabèticament
+            Alfabèticament
           </Button>
         </div>
-        <div>
+        <div className="select">
+          <Form.Label className="pt-2">Provincia: </Form.Label>
           <Form.Select
             size="md"
             type="text"
@@ -73,8 +74,8 @@ function Ex1() {
           </Form.Select>
         </div>
       </div>
-      <div className="table">
-        <Table striped bordered hover size="sm">
+      <div className="table-responsive-sm table-wrapper-scroll-y my-custom-scrollbar">
+        <Table className="table table-bordered table-striped mb-0">
           <thead>
             <tr>
               <th>Municipi</th>
