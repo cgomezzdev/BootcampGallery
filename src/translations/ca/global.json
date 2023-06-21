@@ -1,0 +1,25 @@
+{
+    "lang-select": "ca",
+    "nav": {
+        "home": "Inici",
+        "ex1" : "Ex1",
+        "ex2" : "Ex2",
+        "ex3" : "Ex3"
+    },
+    "header":{
+        "h1": "Benvingut",
+        "p": "Aquest es un projecte del exercicis unificats fets al bootcamp de React"
+    },
+    "ex1":{
+        "p1": "1.Fer una taula que mostri les dades de les ciutats de més avall en columnes",
+        "p2": "2.Posar un botó que ordeni la taula per ordre alfabètic de municipis. Posar un desplegable select amb les 4 provincies, que mostri les poblacions de la provincia seleccionada. Afegir una opció 'totes' que no filtri res, i sigui la opció per defecte",
+        "lable-alphabetically": "Ordena:",
+        "button-alphabetically": "Alfabèticament",
+        "lable-province": "Provincia:",
+        "th-municipality": "Municipi",
+        "th-population": "Població",
+        "th-province": "Provincia",
+        "th-region": "Comarca"
+
+    }
+}

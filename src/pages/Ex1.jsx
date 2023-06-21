@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import cities from "../assets/files/cities.json";
 import { Table, Button, Form, Col } from "react-bootstrap";
 import "../styles/ex1.css";
+import { useTranslation } from "react-i18next";
 
 function Ex1() {
+  const { t, i18n } = useTranslation("global");
   const [sortedMunicipality, setsortedMunicipality] = useState(cities);
   const [selectedProvince, setSelectedProvince] = useState("Totes");
 
@@ -40,25 +42,21 @@ function Ex1() {
   return (
     <div>
       <p className="fs-5 text-start">
-        1.Fer una taula que mostri les dades de les ciutats de més avall en
-        columnes
+        {t("ex1.p1")}
       </p>
       <p className="fs-5 text-start">
-        2.Posar un botó que ordeni la taula per ordre alfabètic de municipis.
-        Posar un desplegable select amb les 4 provincies, que mostri les
-        poblacions de la provincia seleccionada. Afegir una opció "totes" que no
-        filtri res, i sigui la opció per defecte
+        {t("ex1.p2")}        
       </p>
       <hr />
       <div className="filters">
         <div>
-          <Form.Label>Ordena:</Form.Label>
+          <Form.Label>{t("ex1.lable-alphabetically")}</Form.Label>
           <Button variant="light" onClick={handleSortMunicipality}>
-            Alfabèticament
+          {t("ex1.button-alphabetically")}
           </Button>
         </div>
         <div className="select">
-          <Form.Label className="pt-2">Provincia: </Form.Label>
+          <Form.Label className="pt-2">{t("ex1.lable-province")} </Form.Label>
           <Form.Select
             size="md"
             type="text"
@@ -78,10 +76,10 @@ function Ex1() {
         <Table className="table table-bordered table-striped mb-0">
           <thead>
             <tr>
-              <th>Municipi</th>
-              <th>Població</th>
-              <th>Provincia</th>
-              <th>Comarca</th>
+              <th>{t("ex1.th-municipality")}</th>
+              <th>{t("ex1.th-population")}</th>
+              <th>{t("ex1.th-province")}</th>
+              <th>{t("ex1.th-region")}</th>
             </tr>
           </thead>
           <tbody>{showCites}</tbody>

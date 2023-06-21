@@ -1,0 +1,12 @@
+{
+    "lang-select": "es",
+    "nav": {
+        "home": "Inicio",
+        "ex1" : "Ej1",
+        "ex2" : "Ej2",
+        "ex3" : "Ej3"
+    },
+    "header":{
+        "h1": "Bienvenido"
+    }
+}
