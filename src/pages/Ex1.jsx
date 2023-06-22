@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 function Ex1() {
   const { t, i18n } = useTranslation("global");
   const [sortedMunicipality, setsortedMunicipality] = useState(cities);
-  const [selectedProvince, setSelectedProvince] = useState("Totes");
+  const [selectedProvince, setSelectedProvince] = useState(`${t("ex1.all-options")}`);
 
   const handleSortMunicipality = () => {
     const sorted = [...sortedMunicipality].sort((a, b) =>
@@ -20,7 +20,7 @@ function Ex1() {
     const selected = e.target.value;
     setSelectedProvince(selected);
 
-    if (selected === "Totes") {
+    if (selected === `${t("ex1.all-options")}`) {
       setsortedMunicipality(cities);
     } else {
       const filtered = cities.filter((city) => city.provincia === selected);
@@ -63,7 +63,7 @@ function Ex1() {
             value={selectedProvince}
             onChange={handleProvinceChange}
           >
-            <option>Totes</option>
+            <option>{t("ex1.all-options")}</option>
             {provincies.map((province, i) => (
               <option key={i} value={province}>
                 {province}
@@ -76,7 +76,7 @@ function Ex1() {
         <Table className="table table-bordered table-striped mb-0">
           <thead>
             <tr>
-              <th>{t("ex1.th-municipality")}</th>
+              <th>{t("ex1.th-municipalities")}</th>
               <th>{t("ex1.th-population")}</th>
               <th>{t("ex1.th-province")}</th>
               <th>{t("ex1.th-region")}</th>

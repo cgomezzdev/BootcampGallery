@@ -7,6 +7,20 @@
         "ex3" : "Ex3"
     },
     "header":{
-        "h1": "Welcome"
+        "h1": "Welcome",
+        "p": "This is a project of the unified exercises preformed in the React Bootcamp."
+    },
+    "ex1":{
+        "p1": "1.Make a table showing the cities from citites.json file",
+        "p2": "2.Put a button to sort the table in alphabetical order of municipalities. Put a drop-down 'select' with the 5 provinces,showing the towns of the selected province. Add an 'all' option that does not filter anything and is the default option.",
+        "lable-alphabetically": "Sort:",
+        "button-alphabetically": "Alphabetically",
+        "lable-province": "Province:",
+        "th-municipalities": "Municipalities",
+        "th-population": "Population",
+        "th-province": "Province",
+        "th-region": "Region",
+        "all-options": "All"
+
     }
 }

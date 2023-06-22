@@ -8,7 +8,7 @@
     },
     "header":{
         "h1": "Benvingut",
-        "p": "Aquest es un projecte del exercicis unificats fets al bootcamp de React"
+        "p": "Aquest es un projecte dels exercicis unificats fets al Bootcamp de React"
     },
     "ex1":{
         "p1": "1.Fer una taula que mostri les dades de les ciutats de més avall en columnes",
@@ -16,10 +16,11 @@
         "lable-alphabetically": "Ordena:",
         "button-alphabetically": "Alfabèticament",
         "lable-province": "Provincia:",
-        "th-municipality": "Municipi",
+        "th-municipalities": "Municipi",
         "th-population": "Població",
         "th-province": "Provincia",
-        "th-region": "Comarca"
+        "th-region": "Comarca",
+        "all-options": "Totes"
 
     }
 }

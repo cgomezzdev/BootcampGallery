@@ -7,6 +7,20 @@
         "ex3" : "Ej3"
     },
     "header":{
-        "h1": "Bienvenido"
+        "h1": "Bienvenido",
+        "p": "Este es un proyecto de los ejericicios unificados realicadoz en el Bootcamp de React"
+    },
+    "ex1":{
+        "p1": "1.Haz una tabla que muestre los datos de las ciudades del archivo cities.json",
+        "p2": "2.Pon un boton que ordene la tabla por orden Alfabético de municipios. Pon un desplegable 'select' con las 4 provincias, que muestre las poblaciones de la provincia seleccionada. Añadir una opción 'todas' que no filtre nada y sea la opción por defecto.",
+        "lable-alphabetically": "Ordena:",
+        "button-alphabetically": "Alfabéticamente",
+        "lable-province": "Provincia:",
+        "th-municipalities": "Municipio",
+        "th-population": "Población",
+        "th-province": "Provincia",
+        "th-region": "Comarca",
+        "all-options": "Todas"
+
     }
 }
